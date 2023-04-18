@@ -1,0 +1,30 @@
+/*
+Collin Woelfl
+CMPR 120 - Spring 2023
+Date: April 18 2023
+Lab 8
+Collaboration: None
+*/
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	double  value, sum = 0, avg;
+	//loop that will only ask the user to enter seven values
+	for (int num = 0; num < 7; num++)
+	{
+		cout << "Please enter number: ";
+		cin >> value;
+		sum += value; //Adds all values 
+	}
+	//Sum of values and with decimal point
+	cout << "\nThe sum of all numbers you entered is: " << setprecision(2) << fixed << sum;
+	avg = sum / 7; //Math for the average of the sum
+	cout << "\nThe average of all numbers you entered is: " << avg << "\n";
+
+	system("pause");
+	return 0;
+}
